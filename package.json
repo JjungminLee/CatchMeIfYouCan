@@ -13,11 +13,31 @@
     "@types/node": "18.15.3",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
-    "eslint": "8.36.0",
+    "@types/styled-components": "^5.1.26",
+    "@zeit/next-css": "^1.0.1",
+    "bootstrap": "^5.2.3",
+    "eslint": "^8.36.0",
     "eslint-config-next": "13.2.4",
+    "framer-motion": "^10.6.0",
     "next": "13.2.4",
+    "next-images": "^1.8.4",
     "react": "18.2.0",
+    "react-bootstrap": "^2.7.2",
     "react-dom": "18.2.0",
+    "styled-components": "^5.3.9",
+    "styled-reset": "^4.4.5",
     "typescript": "5.0.2"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "babel-plugin-styled-components": "^2.0.7",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.4"
   }
 }
