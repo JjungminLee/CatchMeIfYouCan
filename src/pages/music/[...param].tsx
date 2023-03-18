@@ -8,5 +8,5 @@ export default function Detail() {
     <div>
       <h4 style={{color:'white'}}>{curation}</h4>
     </div>
-  );
+  ); 
 }
