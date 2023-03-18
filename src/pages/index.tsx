@@ -103,7 +103,7 @@ export default function main() {
         <Container>
                 <Row >
                 <Col style={{margin:'20px'}}>
-                        <Box onClick={()=>router.replace('/catchMe')}>
+                        <Box onClick={()=>router.replace('/catchMe/catchMe')}>
                             <ImageGrid>
                                 <Image  src='/images/catchme.svg' alt="" width={230} height={230}
                                />
@@ -124,7 +124,7 @@ export default function main() {
                     
                 </Col>
                 <Col style={{margin:'20px'}}>
-                    <Box onClick={()=>router.replace('/music')}>
+                    <Box onClick={()=>router.replace('/music/music')}>
                         <ImageGrid>
                             <Image src='/images/music.svg' alt="" width={230} height={230}/>
                         </ImageGrid>

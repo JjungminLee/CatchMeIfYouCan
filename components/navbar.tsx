@@ -12,9 +12,9 @@ export default function CustomNav(){
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
-                    <Nav.Link style={{padding:'40px'}}href="/catchMe">Catch Me!</Nav.Link>
+                    <Nav.Link style={{padding:'40px'}} href="/catchMe/catchMe">Catch Me!</Nav.Link>
                     <Nav.Link style={{padding:'40px'}} href="/diary">Diary</Nav.Link>
-                    <Nav.Link style={{padding:'40px'}} href="/music">Music</Nav.Link>
+                    <Nav.Link style={{padding:'40px'}} href="/music/music">Music</Nav.Link>
                     <Nav.Link style={{padding:'40px'}} href="/book">Book&Movie</Nav.Link>
                     <Nav.Link style={{padding:'40px'}} href="/programming">Programming</Nav.Link>
                     <Nav.Link style={{padding:'40px'}} href="/travel">Travel</Nav.Link>
