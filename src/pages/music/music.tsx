@@ -3,6 +3,10 @@ import Image from "next/image"
 import styled from 'styled-components'
 import {Container, Row,Col,Dropdown,Accordion, Button} from 'react-bootstrap';
 import {useRouter} from 'next/router';
+
+
+
+
 const MainContainer=styled.div`
     
     display:inline-flex;
@@ -88,6 +92,9 @@ export default function music(){
 
     const musicDesciption="매일 1시간 10분씩 통학하면서 음악만 듣는 주인장의 뮤직 큐레이션입니다.\n 알앤비를 좋아하고 음악에 감상평 달기를 좋아해요.\n"+
     "너무 감성적인 것 같다면 심신미약이라고 생각해주세요.";
+
+    
+
     return(
         <>
             <CustomNav/>
@@ -124,7 +131,14 @@ export default function music(){
                             <Container >
                                 <Row>
                                     <Col>
-                                        <Box onClick={()=>router.replace('/music/${curation}')}>
+                                        <Box onClick={()=>router.push(
+                                            {
+                                                pathname:'/music/steady',
+                                                query:{ curation:'Steady',
+                                                        subTitle:'제가 마르고 닳도록 듣던 노래를 즐겨보세요.',
+                                                        barImg:'/images/musicCurationBar.svg'}
+                                            }
+                                        )}>
                                             <ImageGrid>
                                                 <Image  src='/images/musicCuration.svg' alt="" width={227} height={230}/>
                                                 
@@ -135,7 +149,14 @@ export default function music(){
                                         </Box>
                                     </Col>
                                     <Col>
-                                        <Box onClick={()=>router.replace('/catchMe')}>
+                                        <Box onClick={()=>router.push(
+                                                {
+                                                    pathname:'/music/봄봄봄',
+                                                    query:{ curation:'봄봄봄',
+                                                            subTitle:'제가 마르고 닳도록 듣던 노래를 즐겨보세요.',
+                                                            barImg:'/images/musicCurationBar.svg'}
+                                                }
+                                            )}>
                                             <ImageGrid>
                                                 <Image  src='/images/musicCuration2.svg' alt="" width={227} height={230}/>
                                             
@@ -146,7 +167,14 @@ export default function music(){
                                         </Box>
                                     </Col>
                                     <Col>
-                                        <Box onClick={()=>router.replace('/catchMe')}>
+                                    <Box onClick={()=>router.push(
+                                            {
+                                                pathname:'/music/이별',
+                                                query:{ curation:'이별',
+                                                        subTitle:'Can I Love? 따흐흫😭',
+                                                        barImg:'/images/musicCurationBar2.svg'}
+                                            }
+                                        )}>
                                             <ImageGrid>
                                                 <Image  src='/images/musicCuration3.svg' alt="" width={227} height={230}/>
                                             
