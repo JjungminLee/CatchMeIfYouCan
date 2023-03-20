@@ -120,7 +120,7 @@ export default function music(){
                         <TextContainer >
                                 <Title fsize={30} top={1.5} left={4} >뮤직 큐레이션</Title>
                                 <ViewMoreBtn top={1.5} left={30}>
-                                    <Image src='/images/viewMore.svg' alt="" width={60} height={30} />
+                                    <Image  src='/images/viewMore.svg'alt="" width={60} height={30} />
                                 </ViewMoreBtn>
                         </TextContainer>
                         <Text fsize={15} top={1.5} left={4}>쓸 데없이 골라 들을 수 있다?</Text>

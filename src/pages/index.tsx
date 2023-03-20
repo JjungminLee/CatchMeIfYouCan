@@ -6,20 +6,23 @@ import router from "next/router";
 import { motion, AnimatePresence } from "framer-motion"
 import Link from 'next/link'
 import {Container, Row,Col,Dropdown,Accordion, Button} from 'react-bootstrap';
+import React from "react";
+
 const MainContainer=styled.div`
     height: 100vh;
     width: 100vw;
     background-color: black;
     display:flex;
-    align-items:center;
-    justify-content:center;
+    flex-wrap: nowrap;
     flex-direction:column;
     overflow: auto;
+    
     
 `;
 const MainTitle=styled.div`
     align-items:center;
     justify-content:center;
+    margin:auto;
    
 `;
 const SubTitle=styled.div`
@@ -84,6 +87,8 @@ const Box=styled.button`
 
 export default function main() {
 
+
+
   const subText="안녕하세요. 제 공간에 오신것을 환영합니다.기록하기 좋아하는 주인장의 일기장입니다.\n주저리거리기 좋아하는  저의 무용한 일상들을 둘러보고 가세요😺";
 
   const router=useRouter();
@@ -91,10 +96,10 @@ export default function main() {
   
   return (
    <MainContainer>
-       <MainTitle>
-          <Image src='/images/MainTitle.svg' alt="" width={921} height={139} />
-          
-       </MainTitle>
+       <MainTitle >
+            <Image src='/images/MainTitle.svg' alt="" width={921} height={200} />
+        
+        </MainTitle>
        <SubTitle>
             {subText}
        </SubTitle>
