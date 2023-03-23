@@ -1,0 +1,78 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Curation{
+  id Int @default(autoincrement()) @id
+  name String
+  subName String
+  imgUrl String
+  // 1:N
+  curationMusicMappings CurationMusicMapping[]
+
+}
+
+model Music{
+  id Int @default(autoincrement()) @id
+  name String
+  imgUrl String
+  youtubeUrl String
+  //1:N
+  curationMusicMappings CurationMusicMapping[]
+}
+
+model CurationMusicMapping{
+  id Int @default(autoincrement()) @id
+  // N:1 
+  curation Curation @relation(fields: [curationId], references: [id])
+  curationId Int
+  // N:1
+  music Music @relation(fields: [musicId], references: [id])
+  musicId Int
+  detailText String @db.Text
+}
+
+// DiaryBook(1) : Diary(N)
+model DiaryBook{
+  id Int @default(autoincrement()) @id
+  title String
+  imgUrl String
+  diaryList Diary[]
+
+}
+
+model Diary{
+  id Int @default(autoincrement()) @id
+  title String
+  text String
+  imgUrl String
+  diaryBook DiaryBook @relation(fields: [diaryBookId], references: [id])
+  diaryBookId Int
+
+
+}
+
+model Programming{
+  id Int @default(autoincrement()) @id
+  title String
+  text String @db.Text
+  imgUrl String
+
+}
+
+
+model Travel{
+  id Int @default(autoincrement()) @id
+  title String
+  text String @db.Text
+  imgUrl String
+
+}

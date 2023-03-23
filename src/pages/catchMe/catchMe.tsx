@@ -41,6 +41,7 @@ const Text=styled.div<{fsize:number,top:number,left:number}>`
 
 `
 
+
 export default function catchMe(){
 
     const whoau="매일 컴퓨터 앞에서 개발하는 것을 좋아하고\n실 없는 얘기를 하며 사람들과 이야기 하고 웃는 것을 \n좋아하는 사람이에요.\n기록하고 남겨두는 것을 좋아합니다. "+
